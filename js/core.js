@@ -62,6 +62,22 @@ $(function() {
 	});
 
 
-});
+	//Para que la barra lateral permanezca visible
+	$(window).scroll(function(){
+		if ($window.scrollTop() > offset.top) {
+            $("#sidebar").stop().animate({
+ 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
+ 			}, "slow" );
+        } else {
+    		$("#sidebar").stop().animate({
+ 				"marginTop": 0 + "px"
+ 			}, "slow" );
+        }
+	});
 
+});
+//Variables para scroller de lateral
+var $sidebar   = $("#sidebar"),
+        $window    = $(window),
+        offset     = $sidebar.offset();
 
