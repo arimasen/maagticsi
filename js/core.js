@@ -62,8 +62,32 @@ $(function() {
 	});
 
 
-	//Para que la barra lateral permanezca visible
+
 	$(window).scroll(function(){
+		if ($("#medidor").css("width") == "1px" ){
+
+			if ($window.scrollTop() > offset.top) {
+	            $("#sidebar").stop().animate({
+	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
+	 			}, "slow" );
+	        } else {
+	    		$("#sidebar").stop().animate({
+	 				"marginTop": 0 + "px"
+	 			}, "slow" );
+	        }
+		} else{
+			console.log("NA"+$("#medidor").css("width"));
+		}
+
+	});
+
+/*	$(window).resize(function(){	
+	
+		// your code here
+		
+	});*/
+
+	/*$(window).scroll(function(){
 		if ($window.scrollTop() > offset.top) {
             $("#sidebar").stop().animate({
  				"marginTop": ($(window).scrollTop() - offset.top) + "px"
@@ -73,7 +97,7 @@ $(function() {
  				"marginTop": 0 + "px"
  			}, "slow" );
         }
-	});
+	});*/
 
 });
 //Variables para scroller de lateral
