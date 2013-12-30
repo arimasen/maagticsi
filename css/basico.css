@@ -281,6 +281,11 @@ p.gris{
 	height:53px;
 	margin:18px 0;
 }
+@media(max-width:768px){
+	#nav-principal .divider {
+		display:none;
+		}
+}
 /**banner**/
 .bgnegro70 {
 	background:rgba(0,0,0,0.70);
@@ -295,6 +300,33 @@ p.gris{
 	border-bottom:1px #ddd solid;
 	padding:3px 0;
 }
+li.list-group-item ul {
+	margin:10px 0;
+	border-top:1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
+	border-left:none;
+	border-right:none;
+}
+li.list-group-item ul li {
+	background:#f4f4f4;
+	display:block;
+	border:none;
+}
+li.list-group-item ul li ul {
+	border-top:1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
+	border-left:3px solid #DDDDDD;
+}
+li.list-group-item ul li ul li {
+	background:#fff;
+}
+.list-group-item {
+    border-top:1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
+}
+
+
+/***extras**/
 .noborder {
 	border:none;
 }
@@ -332,7 +364,7 @@ p.gris{
 .dl-horizontal dt.text-left {
 	text-align:left;
 	width:130px;
-	font-size:18px;
+	font-size:1.3em;
 	
 	font-family: opensans;
 	font-weight:500;
