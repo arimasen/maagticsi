@@ -7,26 +7,15 @@
     <!-- INCLUSIÓN DE JQuery y Bootstrap.js al final -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/basico.css" rel="stylesheet">
-    <style type="text/css">
-   /*   .fixed {
-    position: fixed;
-    top: 0;   
-    }
-
-    #sidebar {
-    width: 130px;
-    height: auto;
-    overflow: hidden;
-    background: #ffffff;
-    margin: 0 auto;
-    float: left;
-    clear: right;
-    padding: 8px;
-    background: #e5e5e5;
-    border: 2px dashed red;
-}*/
+    <style>
+    /*
+      #medidor {width: 0px;}
+      @media  (min-width : 768px){
+        #medidor {width:1px;}
+      }*/
 
     </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -193,9 +182,9 @@ NAVEGACION
         
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, delectus cum porro culpa esse temporibus nam tempore maiores fugiat atque ipsum et quaerat dicta voluptas veritatis voluptatem ea consequuntur doloremque.<br />Fugit, autem, odio iusto tempora a eaque possimus recusandae illo distinctio minus soluta harum aspernatur officia vel eligendi! Ea, ab sequi vero reprehenderit explicabo perferendis facere aperiam facilis saepe beatae.</p>
         
-        <button type="button" class="btn-lg btn-side" style="color:gray;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-list"></span>  Definiciones</button>
+        <button type="button" class="btn-lg btn-side" style="color:gray;" data-toggle="modal" data-target="#definiciones"><span class="glyphicon glyphicon-list"></span>  Definiciones</button>
         <p></p>
-        <button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-list-alt"></span>  Productos<br />(Formatos)</button>
+        <button type="button" class="btn-lg btn-side" style="color:gray;"  data-toggle="modal" data-target="#productos"><span class="glyphicon glyphicon-list-alt"></span>  Productos<br />(Formatos)</button>
         <p></p>
         <button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-book"></span>  Matriz de Metodologías</button>
       </div>  <!-- Columna chica -->
@@ -205,13 +194,13 @@ NAVEGACION
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal Definiciones-->
+<div class="modal fade" id="definiciones" tabindex="-1" role="dialog" aria-labelledby="definicionesLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Definiciones</h4>
+        <h4 class="modal-title" id="definicionesLabel">Definiciones</h4><span id="medidor"></span>
       </div>
       <div class="modal-body">
         
@@ -288,6 +277,43 @@ NAVEGACION
             <dt>Aplicativo de cómputo:</dt>
             <dd>El software y/o sistemas informáticos, que se conforman por un conjunto de componentes o programas contruidos con herramientas de software que habilitan una funcionalidad o automatizan un proceso, de acuerdo a requerimientos previamente definidos.</dd>
           </dl>
+        </div>
+      </div>
+
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal productos-->
+<div class="modal fade" id="productos" tabindex="-1" role="dialog" aria-labelledby="productosLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="productosLabel">Productos (formatos)</h4>
+      </div>
+      <div class="modal-body">
+        
+
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <li class="list-group-item"> Descargable1  </li>
+            <li class="list-group-item"> Descargable2  </li>
+            <li class="list-group-item"> Descargable3  </li>
+            <li class="list-group-item"> Descargable4  </li>
+          </ul>    
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <li class="list-group-item"> Descargable5  </li>
+            <li class="list-group-item"> Descargable6  </li>
+            <li class="list-group-item"> Descargable7  </li>
+            <li class="list-group-item"> Descargable8  </li>
+          </ul> 
         </div>
       </div>
 
