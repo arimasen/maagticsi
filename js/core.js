@@ -44,13 +44,14 @@ $("#drop-definiciones").click(function(){
 
 $(function() {
 
+	/* --- Para que se agrande los links de l abarra de navegación al mouseover.
 	$( "ul.nav li" ).hover(
 		function() {
 			$(this).animate({"font-size":"1.17em"},300);
 		}, function() {
 			$(this).animate({"font-size":"1em"},300);
 		}
-	);
+	);*/
 
 	$("ul.pestagnas li a").click(function(event){
 		event.preventDefault();
