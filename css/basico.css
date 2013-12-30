@@ -369,6 +369,7 @@ li.list-group-item ul li ul li {
 	font-family: opensans;
 	font-weight:500;
 	line-height:1.1;
+	margin-bottom:12px;
 }
 h4.actividad {
 	display:block;
@@ -376,8 +377,16 @@ h4.actividad {
 	margin-bottom:20px;
 	border-bottom:#cd2a2d 1px solid;
 }
+.actividades .divider {
+	border-top:#d1d1d2 1px solid;
+	border-bottom:#FFFFFF 1px solid;
+}
 
 #medidor {width: 0px;}
       @media  (min-width : 768px){
         #medidor {width:1px;}
       }
+	  
+.panel .list-group-item {
+    background-color: #EEEEEE;
+}
