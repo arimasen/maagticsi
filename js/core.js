@@ -63,7 +63,6 @@ $(function() {
 	});
 
 
-
 	$(window).scroll(function(){
 		if ($("#medidor").css("width") == "1px" ){
 
