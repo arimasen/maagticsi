@@ -127,7 +127,13 @@ behavior : url('js/pie.htc');*/
 	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
 }
 .lista{
-	list-style: none;
+	list-style:none;
+	margin-left:0;
+	margin-bottom:0;
+	border-left:#008781 28px solid;	
+}
+.lista.padding{
+	padding:50px 15px;
 }
 .lista li {
 	font-weight: bold;
@@ -274,7 +280,7 @@ p.gris{
 .bgnegro70 {
 	background:rgba(0,0,0,0.70);
 }
-/**tablas**/
+/**listas**/
 .links {
 	border-left:#00b7af 28px solid;
 }
@@ -286,6 +292,19 @@ p.gris{
 }
 .noborder {
 	border:none;
+}
+.nopadding {
+	padding:0;
+}
+/**index**/
+.col-sm-6 .wrapper {
+	padding:15px;
+}
+.gestion {
+	min-height:370px;
+}
+.gestion .wrapper {
+	border:#DDD 1px solid;
 }
 
 /***Proceso****/
@@ -312,3 +331,8 @@ h4.actividad {
 	margin-bottom:20px;
 	border-bottom:#cd2a2d 1px solid;
 }
+
+#medidor {width: 0px;}
+      @media  (min-width : 768px){
+        #medidor {width:1px;}
+      }
