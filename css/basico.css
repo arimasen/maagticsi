@@ -40,12 +40,12 @@ h4 {font-size: 1.5em }
 #titulo_principal{
 	color: #FFFFFF;
 	position: absolute;
-	top: 18px;
-	width: 560px;
+	top: 14px;
+	width: 600px;
 	z-index: 500;
 	text-shadow: 1px 1px 1px rgba(45, 45, 45, 1);
 	font-size: 1.3em;
-	line-height:1.6;
+	line-height:1.7;
 }
 
 .bg-banner {
@@ -67,16 +67,16 @@ h4 {font-size: 1.5em }
 */
 
 #nav-principal{
-	background: rgb(239,239,239); /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3MyUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2VjZWNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-background: -moz-linear-gradient(top,  rgba(239,239,239,1) 73%, rgba(206,206,206,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(73%,rgba(239,239,239,1)), color-stop(100%,rgba(206,206,206,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#cecece',GradientType=0 ); /* IE6-8 */
+	/*background: rgb(239,239,239);  Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' 
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3MyUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2VjZWNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);*/
+/*background: -moz-linear-gradient(top,  rgba(239,239,239,1) 73%, rgba(206,206,206,1) 100%);  FF3.6+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(73%,rgba(239,239,239,1)), color-stop(100%,rgba(206,206,206,1)));  Chrome,Safari4+ */
+/*background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  Chrome10+,Safari5.1+ */
+/*background: -o-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  Opera 11.10+ */
+/*background: -ms-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  IE10+ */
+/*background: linear-gradient(to bottom,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#cecece',GradientType=0 );  IE6-8 */
 
 /*background: rgb(239,239,239); 
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZWNlY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -89,9 +89,8 @@ background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(206,206,206,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#cecece',GradientType=0 ); 
 */
 
-	background:#efefef;
-	
-	border-radius:5px;
+	background:url(../imgs/bg-ruido.jpg) #efefef;	
+	border-radius:5px;	
 }
 #nav-principal>ul>li {padding-top:21px;}
 #nav-principal li a{
@@ -136,7 +135,7 @@ behavior : url('js/pie.htc');*/
 	padding:50px 15px;
 }
 .lista li {
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding:5px;
 }
 .lista a, .lista a:link, .lista a:visited{
@@ -186,7 +185,10 @@ padding: 5px;
 #nav-principal li a:hover {background-color: #DDD;}
 
 .panel-no-pad{ padding: 0;}
-
+.link-list{
+	margin:0;
+	padding:0;
+}
 .link-list{
 	text-decoration: none;
 	list-style: none;
@@ -266,16 +268,19 @@ p.gris{
 /*****CAMBIOS ALMA***/
 /***menu***/
 .navbar{border-radius:5px}
-#nav-principal.navbar-collapse {
-	background-color:#efefef;
-	border:#d1d1d2 1px solid;
-}
+
 .navbar-default{
 	background-color:#efefef;
 	color:#fff;
 	border:#d1d1d2 1px solid;
 }
 
+#nav-principal .divider {
+	border-right:#FFFFFF 1px solid;
+	border-left:#d1d1d2 1px solid;
+	height:53px;
+	margin:18px 0;
+}
 /**banner**/
 .bgnegro70 {
 	background:rgba(0,0,0,0.70);
@@ -301,11 +306,19 @@ p.gris{
 	padding:15px;
 }
 .gestion {
-	min-height:370px;
+	
 }
 .gestion .wrapper {
-	border:#DDD 1px solid;
+	border-left:#DDD 1px solid;
+	border-right:#DDD 1px solid;
+	border-bottom:#DDD 4px solid;
+	min-height:370px;
+	margin-bottom:30px;
 }
+.gestion ul {
+	padding:0 10px;
+}
+	
 
 /***Proceso****/
 .tit-proceso {
