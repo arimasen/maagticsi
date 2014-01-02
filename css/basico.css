@@ -118,6 +118,13 @@ behavior : url('js/pie.htc');*/
 	color:#cd2a2d;
 	/*border-bottom: 1px solid #CCC;*/
 }
+.color-gris {
+	color:#77777a;
+}
+.borde-gris {
+	border-left:8px solid #77777a;
+	margin-top:0px;
+}
 .color-red{
 	color:#cd2a2d;
 }
@@ -227,7 +234,7 @@ ul.pestagnas li a.active{
 ul.pestagnas a {
 	color: white;
 	display: block;
-	width: 70px;
+	min-width: 70px;
 	height: 50px;
 	padding: 15px;
 }
@@ -239,6 +246,20 @@ ul.pestagnas a:hover, ul.pestagnas a:active{
 	text-decoration: none;
 	background-color: #A42224;
 }
+/*pestañas grises*/
+ul.pestagnas li.gris {display: inline-block; background-color: #a9a9ab;}
+ul.pestagnas li.gris a.active{
+	background-color:#77777a;
+}
+ul.pestagnas a.gris:link, ul.pestagnas a.gris:visited {
+	text-decoration: none;
+	background-color: #a9a9ab;
+}
+ul.pestagnas a.gris:hover, ul.pestagnas a.gris:active{
+	text-decoration: none;
+	background-color: #59595c;
+}
+
 p.gris{
 	font-weight: bold;
 	padding:5px;
@@ -376,6 +397,12 @@ h4.actividad {
 	padding:12px 0;
 	margin-bottom:20px;
 	border-bottom:#cd2a2d 1px solid;
+}
+h4.actividadgris {
+	display:block;
+	padding:12px 0;
+	margin-bottom:20px;
+	border-bottom:#77777a 1px solid;
 }
 .actividades .divider {
 	border-top:#d1d1d2 1px solid;
