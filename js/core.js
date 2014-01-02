@@ -44,15 +44,6 @@ $("#drop-definiciones").click(function(){
 
 $(function() {
 
-	/* --- Para que se agrande los links de l abarra de navegación al mouseover.
-	$( "ul.nav li" ).hover(
-		function() {
-			$(this).animate({"font-size":"1.17em"},300);
-		}, function() {
-			$(this).animate({"font-size":"1em"},300);
-		}
-	);*/
-
 	$("ul.pestagnas li a").click(function(event){
 		event.preventDefault();
 		$("ul.pestagnas li a").removeClass("active");
@@ -61,7 +52,6 @@ $(function() {
 		var estaAct = $(this).attr("ver");
 		$("#"+estaAct).css("display","block");
 	});
-
 
 	$(window).scroll(function(){
 		if ($("#medidor").css("width") == "1px" ){
@@ -81,23 +71,14 @@ $(function() {
 
 	});
 
-/*	$(window).resize(function(){	
-	
-		// your code here
-		
-	});*/
-
-	/*$(window).scroll(function(){
-		if ($window.scrollTop() > offset.top) {
-            $("#sidebar").stop().animate({
- 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
- 			}, "slow" );
-        } else {
-    		$("#sidebar").stop().animate({
- 				"marginTop": 0 + "px"
- 			}, "slow" );
-        }
-	});*/
+    var duration = 500;
+    
+    $("#btn_subir").click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+    //jQuery('.back-to-top')
 
 });
 //Variables para scroller de lateral
