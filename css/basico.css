@@ -121,8 +121,15 @@ behavior : url('js/pie.htc');*/
 .color-gris {
 	color:#77777a;
 }
+.color-verde {
+	color:#00998e;
+}
 .borde-gris {
 	border-left:8px solid #77777a;
+	margin-top:0px;
+}
+.borde-verde {
+	border-left:8px solid #00998e;
 	margin-top:0px;
 }
 .color-red{
@@ -259,6 +266,20 @@ ul.pestagnas a.gris:hover, ul.pestagnas a.gris:active{
 	text-decoration: none;
 	background-color: #59595c;
 }
+/*pestañas verdes*/
+ul.pestagnas li.verde {display: inline-block; background-color: #00b7af;}
+ul.pestagnas li.verde a.active{
+	background-color:#007f76;
+}
+ul.pestagnas a.verde:link, ul.pestagnas a.verde:visited {
+	text-decoration: none;
+	background-color: #00b7af;
+}
+ul.pestagnas a.verde:hover, ul.pestagnas a.verde:active{
+	text-decoration: none;
+	background-color: #00665a;
+}
+
 
 p.gris{
 	font-weight: bold;
@@ -279,6 +300,9 @@ p.gris{
 .producto-num-gris{
 	background-color:#77777a; color:#fff;font-size:2.2em;
 }
+.producto-num-verde{
+	background-color:#00998e; color:#fff;font-size:2.2em;
+}
 
 .div-indicador .row{
 	margin-top: 5px;
@@ -296,6 +320,16 @@ p.gris{
 }
 
 .div-indicador-gris .row .color-gris{
+	font-weight: bold;
+}
+
+.div-indicador-verde .row{
+	margin-top: 5px;
+	border:1px solid #ccc;
+	border-left:6px solid #00998e;
+}
+
+.div-indicador-verde .row .color-verde{
 	font-weight: bold;
 }
 
@@ -416,6 +450,12 @@ h4.actividadgris {
 	padding:12px 0;
 	margin-bottom:20px;
 	border-bottom:#77777a 1px solid;
+}
+h4.actividadverde {
+	display:block;
+	padding:12px 0;
+	margin-bottom:20px;
+	border-bottom:#00998e 1px solid;
 }
 .actividades .divider {
 	border-top:#d1d1d2 1px solid;
