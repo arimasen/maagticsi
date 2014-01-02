@@ -276,13 +276,26 @@ p.gris{
 .producto-num{
 	background-color:#DC6A6C; color:#fff;font-size:2.2em;
 }
+.producto-num-gris{
+	background-color:#77777a; color:#fff;font-size:2.2em;
+}
 
 .div-indicador .row{
 	margin-top: 5px;
 	border:1px solid #ccc;
 	border-left:6px solid #DC6A6C;
 }
+
 .div-indicador .row .color-red{
+	font-weight: bold;
+}
+.div-indicador-gris .row{
+	margin-top: 5px;
+	border:1px solid #ccc;
+	border-left:6px solid #77777a;
+}
+
+.div-indicador-gris .row .color-gris{
 	font-weight: bold;
 }
 
