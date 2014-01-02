@@ -227,7 +227,7 @@ ul.pestagnas{
 	list-style-type: none;
 	margin-left:3px;
 }
-ul.pestagnas li {display: inline-block; background-color: #DC6A6C;}
+ul.pestagnas li {display: inline-block; background-color: #DC6A6C;cursor:pointer;}
 ul.pestagnas li a.active{
 	background-color:#cd2a2d;
 }
