@@ -30,6 +30,9 @@ h1 {font-size: 1.7em;}
 h2 {font-size: 1.8em;}
 h3 {font-size: 1.6em;}
 h4 {font-size: 1.5em }
+h1, h2, h3 {
+    margin: 20px 0;
+}
 
 @media (min-width: 1200px) {
   .container {
@@ -445,6 +448,10 @@ li.list-group-item ul li ul li {
 .nopadding {
 	padding:0;
 }
+.title-seccion {
+	border-bottom:#ddd 1px solid;
+	padding:10px 0;
+}
 
 /**index**/
 .col-sm-6 .wrapper {
@@ -510,6 +517,50 @@ button.red:hover {
 }
 .entrega {
 	background:url(../imgs/bg_green.png) repeat-x;
+}
+/**iconos del manual**/
+.bg-manual {
+	height:196px;
+	width:100%;	
+	position:relative;
+	margin-bottom:30px;
+}
+.bg-manual .titulo {
+	position: absolute;
+	top: 158px;
+	width: 100%;
+}
+.bg-manual .titulo .txt {
+	display:block;
+	border-radius: 5px;
+	background: #fff;
+	border-bottom: 4px #dbdbdc solid;
+	color: #d12a2f;
+	font-family: opensans;	
+	font-size: 1.7em;
+	text-align:center;
+	width:60%;
+	/*margin:0 auto;*/
+	padding: 0 8px;
+	height:5%;
+}
+.bg-manual img {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.boxgober {
+	background:url(../imgs/bg_red.png);
+	border-right:#d95256 10px solid;
+}
+.boxorganiza {
+	background:url(../imgs/bg_gray.png);
+	border-right:#77777a 10px solid;
+}
+.boxentrega {
+	background:url(../imgs/bg_green.png) repeat-x;
+	border-right:#d95256 10px solid;
 }
 	
 /***Proceso****/
