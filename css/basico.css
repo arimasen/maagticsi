@@ -217,9 +217,9 @@ behavior : url('js/pie.htc');*/
 }
 
 
-ul.nav li.dropdown:hover > ul.dropdown-menu {
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
-}
+}*/
 .drop-disp{
 width:210px;
 padding: 5px;

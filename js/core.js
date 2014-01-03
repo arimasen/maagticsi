@@ -71,6 +71,54 @@ $(function() {
 
 	});
 
+
+
+
+/*==============
+    FOR TEST PURPOSES */
+
+    if ($("#medidor").css("width") != "1px" ){
+    	$("ul.nav>li.dropdown>a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
+	} else{
+		$("ul.nav>li.dropdown>a").removeClass("dropdown-toggle").attr("data-toggle","");
+	}
+
+	$( window ).resize(function() {
+		if ($("#medidor").css("width") != "1px" ){
+			console.log("Debe cambiar");
+    	$("ul.nav>li.dropdown>a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
+	} else{
+		console.log("Debe quitar classes");
+		$("ul.nav>li.dropdown>a").removeClass("dropdown-toggle").attr("data-toggle","");
+	}
+	});
+
+
+     	
+     	/*$(window).scroll(function(){
+		if ($("#medidor").css("width") == "1px" ){
+
+			if ($window.scrollTop() > offset.top) {
+	            $("#sidebar").stop().animate({
+	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
+	 			}, "slow" );
+	        } else {
+	    		$("#sidebar").stop().animate({
+	 				"marginTop": 0 + "px"
+	 			}, "slow" );
+	        }
+		} else{
+			console.log("NA"+$("#medidor").css("width"));
+		}
+
+	});*/
+
+
+
+
+    /*==========*/
+
+
     var duration = 500;
     
     $("#btn_subir").click(function(event) {
@@ -78,7 +126,6 @@ $(function() {
         $('html, body').animate({scrollTop: 0}, duration);
         return false;
     })
-    //jQuery('.back-to-top')
 
 });
 //Variables para scroller de lateral
