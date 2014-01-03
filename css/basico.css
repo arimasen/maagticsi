@@ -247,12 +247,28 @@ padding: 5px;
 .link-list{
 	margin:0;
 	padding:0;
-}
-.link-list{
 	text-decoration: none;
 	list-style: none;
 }
-
+.link-list li {
+	padding:3%;
+}
+#gobernanza .col-sm-6 ul {
+	margin-top:13%;
+}
+@media(max-width:768px){
+	#gobernanza .col-sm-6 ul {
+		margin-top:0;
+	}
+}
+#organizacion .col-sm-6 ul {
+	margin-top:5%;
+}
+@media(max-width:768px){
+	#organizacion .col-sm-6 ul {
+		margin-top:0;
+	}
+}
 .link-list a, .link-list a:link, .link-list a:visited{
 	color:#008781;
 	text-decoration: none;
@@ -462,7 +478,7 @@ li.list-group-item ul li ul li {
 	border-left:#dbdbdc 1px solid;
 	border-right:#dbdbdc 1px solid;
 	border-bottom:#dbdbdc 4px solid;
-	min-height:370px;
+	min-height:390px;
 	margin-bottom:30px;
 }
 .gestion ul {
@@ -523,11 +539,15 @@ button.red:hover {
 	height:196px;
 	width:100%;	
 	position:relative;
-	margin-bottom:30px;
 }
+ @media  (max-width : 768px){
+	.bg-manual {
+		margin-bottom:20px;
+	}
+ }
 .bg-manual .titulo {
 	position: absolute;
-	top: 158px;
+	top: 162px;
 	width: 100%;
 }
 .bg-manual .titulo .txt {
@@ -539,7 +559,7 @@ button.red:hover {
 	font-family: opensans;	
 	font-size: 1.7em;
 	text-align:center;
-	width:60%;
+	width:64%;
 	/*margin:0 auto;*/
 	padding: 0 8px;
 	height:5%;
@@ -559,8 +579,8 @@ button.red:hover {
 	border-right:#77777a 10px solid;
 }
 .boxentrega {
-	background:url(../imgs/bg_green.png) repeat-x;
-	border-right:#d95256 10px solid;
+	background:url(../imgs/bg_green.png);
+	border-right:#008781 10px solid;
 }
 	
 /***Proceso****/
@@ -575,8 +595,7 @@ button.red:hover {
 .dl-horizontal dt.text-left {
 	text-align:left;
 	width:130px;
-	font-size:1.3em;
-	
+	font-size:1.3em;	
 	font-family: opensans;
 	font-weight:500;
 	line-height:1.1;
