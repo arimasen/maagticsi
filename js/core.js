@@ -72,11 +72,6 @@ $(function() {
 	});
 
 
-
-
-/*==============
-    FOR TEST PURPOSES */
-
     if ($("#medidor").css("width") != "1px" ){
     	$("ul.nav>li.dropdown>a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
 	} else{
@@ -94,42 +89,28 @@ $(function() {
 	});
 
 
-     	
-     	/*$(window).scroll(function(){
-		if ($("#medidor").css("width") == "1px" ){
-
-			if ($window.scrollTop() > offset.top) {
-	            $("#sidebar").stop().animate({
-	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
-	 			}, "slow" );
-	        } else {
-	    		$("#sidebar").stop().animate({
-	 				"marginTop": 0 + "px"
-	 			}, "slow" );
-	        }
-		} else{
-			console.log("NA"+$("#medidor").css("width"));
-		}
-
-	});*/
-
-
-
-
-    /*==========*/
-
-
     var duration = 500;
     
     $("#btn_subir").click(function(event) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, duration);
         return false;
-    })
+    });
+
+   $(".ventanas").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: true,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 
 });
 //Variables para scroller de lateral
 var $sidebar   = $("#sidebar"),
         $window    = $(window),
         offset     = $sidebar.offset();
-
