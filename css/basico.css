@@ -40,14 +40,18 @@ h4 {font-size: 1.5em }
 #titulo_principal{
 	color: #FFFFFF;
 	position: absolute;
-	top: 14px;
-	width: 600px;
+	top: 20px;
+	width: 55%;
 	z-index: 500;
 	text-shadow: 1px 1px 1px rgba(45, 45, 45, 1);
 	font-size: 1.3em;
 	line-height:1.7;
 }
-
+@media(max-width:775px){
+	#titulo_principal{
+		width: 96%;
+		}
+}
 .bg-banner {
 	width:100%;
 	height: 256px;
@@ -140,10 +144,10 @@ behavior : url('js/pie.htc');*/
 	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
 }
 .lista{
-	list-style:none;
+	/*list-style:none;*/
 	margin-left:0;
 	margin-bottom:0;
-	border-left:#008781 28px solid;	
+	border-left:#00b7af 28px solid;	
 }
 .lista.padding{
 	padding:50px 15px;
@@ -151,6 +155,9 @@ behavior : url('js/pie.htc');*/
 .lista li {
 	/*font-weight: bold;*/
 	padding:5px;
+	margin-left:20px;
+	list-style:disc;
+	color:#008781;
 }
 .lista a, .lista a:link, .lista a:visited{
 	/*color:#3ccec8;*/
@@ -162,12 +169,47 @@ behavior : url('js/pie.htc');*/
 	color:#3ccec8;
 }
 
-.btn-side{ width:170px;}
+.btn-side{
+	display:block;
+	width:100%;
+	background:#dbdbdc;
+	border-radius: .2em;
+	font-size:1.2em;
+	/*border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px #FEFFFF;*/
+	border: 1px solid #d1d1d2;
+	/*border: 1px solid #a9a9ab;*/
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;	
+	-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.5) inset, 0 1px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.5) inset, 0 1px 0 rgba(0,0,0,.3);
+	box-shadow: 0 0 1px 1px rgba(255,255,255,.5) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+.btn-side:hover {
+	background:#efefef;
+	border: 1px solid #dbdbdc;
+	color:#666;
+	text-shadow: 0 1px 0 rgba(255,255,255,.9);	
+	-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.7) inset, 0 1px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.7) inset, 0 1px 0 rgba(0,0,0,.3);
+	box-shadow: 0 0 1px 1px rgba(255,255,255,.7) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+.btn-side:active {
+	background:#efefef;
+	border: 1px solid #dbdbdc;
+	color:#666;
+	text-shadow: 0 1px 0 rgba(255,255,255,.9);	
+	-moz-box-shadow: 0 0 3px 1px rgba(0,0,0,.3) inset, 0 1px 0 rgba(255,255,255,.3);
+	-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,.3) inset, 0 1px 0 rgba(255,255,255,.3);
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.3) inset, 0 1px 0 rgba(255,255,255,.3);
+}
 
 
 .panel{
-	background-color: #DDD;
-	border-bottom: 3px solid #AAA;
+	background-color: #efefef;
+	border-bottom: 4px solid #dbdbdc;
 }
 
 .modal-dialog {
@@ -362,6 +404,9 @@ p.gris{
 .links {
 	border-left:#00b7af 28px solid;
 }
+.listnone {
+	list-style:none;
+}
 .articulos {
 	display:block;
 	border-top:3px #ddd solid;
@@ -393,7 +438,6 @@ li.list-group-item ul li ul li {
 	border-bottom:1px solid #DDDDDD;
 }
 
-
 /***extras**/
 .noborder {
 	border:none;
@@ -401,25 +445,73 @@ li.list-group-item ul li ul li {
 .nopadding {
 	padding:0;
 }
+
 /**index**/
 .col-sm-6 .wrapper {
 	padding:15px;
 }
-.gestion {
-	
-}
 .gestion .wrapper {
-	border-left:#DDD 1px solid;
-	border-right:#DDD 1px solid;
-	border-bottom:#DDD 4px solid;
+	border-top:#dbdbdc 1px solid;
+	border-left:#dbdbdc 1px solid;
+	border-right:#dbdbdc 1px solid;
+	border-bottom:#dbdbdc 4px solid;
 	min-height:370px;
 	margin-bottom:30px;
 }
 .gestion ul {
 	padding:0 10px;
 }
+button.red {
+	border-radius:5px;
+	background:#d53e43;
+	color:#FFF;
+}
+button.red:hover {
+	background:#dd666a;
+	color:#CCC;
+}
+.bg-iconos {
+	height:110px;
+	width:inherit;
+	border-bottom:#dbdbdc 1px solid;
+	position:relative;
+	margin-bottom:30px;
+}
+.bg-iconos .titulo {
+	position: absolute;
+	top:91px;	
+	width:100%;	
+}
+.bg-iconos .titulo .txt {
+	display:block;
+	border-radius: 5px;
+	background: #fff;
+	border-bottom: 4px #dbdbdc solid;
+	color: #d12a2f;
+	font-family: opensans;	
+	font-size: 1.7em;
+	text-align:center;
+	width:80%;
+	margin:0 auto;
+	padding: 0 8px;
+	height:5%;
+}
+.bg-iconos img {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.gobernanza {
+	background:url(../imgs/bg_red.png) repeat-x;
+}
+.organizacion {
+	background:url(../imgs/bg_gray.png) repeat-x;
+}
+.entrega {
+	background:url(../imgs/bg_green.png) repeat-x;
+}
 	
-
 /***Proceso****/
 .tit-proceso {
 	margin:0;
@@ -461,6 +553,28 @@ h4.actividadverde {
 	border-top:#d1d1d2 1px solid;
 	border-bottom:#FFFFFF 1px solid;
 }
+
+/**sidebar**/
+.glyphicon {
+	display:block;
+	float:left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	color:#FFF;
+	font-size:1.3em;	
+	padding-right:30px;
+	/*border-right:#fefefe 1px solid;*/
+	margin:2% 0;
+}
+button.btn-side .title {
+	float:left;
+	display:block;
+	padding-left:12px;	
+	/*border-left:#bdbdbf 1px solid;*/
+	margin:2% 0;
+	width:70%;
+	text-align:left;
+}	
+	
 
 #medidor {width: 0px;}
       @media  (min-width : 768px){
