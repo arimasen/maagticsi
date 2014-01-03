@@ -253,6 +253,14 @@ padding: 5px;
 .link-list li {
 	padding:3%;
 }
+#reglas .col-sm-6 ul {
+	margin-top:11%;
+}
+@media(max-width:768px){
+	#reglas .col-sm-6 ul {
+		margin-top:0;
+	}
+}
 #gobernanza .col-sm-6 ul {
 	margin-top:13%;
 }
@@ -266,6 +274,14 @@ padding: 5px;
 }
 @media(max-width:768px){
 	#organizacion .col-sm-6 ul {
+		margin-top:0;
+	}
+}
+#entrega .col-sm-6 ul {
+	margin-top:3%;
+}
+@media(max-width:768px){
+	#entrega .col-sm-6 ul {
 		margin-top:0;
 	}
 }
@@ -580,7 +596,18 @@ button.red:hover {
 }
 .boxentrega {
 	background:url(../imgs/bg_green.png);
-	border-right:#008781 10px solid;
+	border-right:#008781 10px solid;	
+}
+
+.boxreglas .titulo {
+	position: absolute;
+	top: 73px;
+	width: 100%;
+}
+.boxreglas {
+	background:url(../imgs/bg_tres.png);
+	border-right:#dbdbdc 10px solid;
+	height:107px;
 }
 	
 /***Proceso****/
