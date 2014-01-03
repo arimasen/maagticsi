@@ -574,7 +574,15 @@ button.btn-side .title {
 	width:70%;
 	text-align:left;
 }	
-	
+#sidebar h3 {
+	text-align:center;
+	display:block;
+	border-top:4px #dbdbdc solid;
+	border-bottom:1px #dbdbdc solid;
+	padding:5px 0;
+	margin-bottom:15px;
+	color:#666;
+}
 
 #medidor {width: 0px;}
       @media  (min-width : 768px){
