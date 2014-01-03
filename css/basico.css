@@ -643,3 +643,21 @@ button.btn-side .title {
 .panel .list-group-item {
     background-color: #EEEEEE;
 }
+/*  Para acondicionar la barra de navegación a diferentes tamagnos */
+    @media (max-width: 767px) {
+        #titulo_principal{top:0px;font-size:1.2em;}
+        #nav-principal>ul>li {padding-top:0px;}      }
+
+     @media (min-width: 768px) and (max-width: 991px) {
+        #titulo_principal{top:0px; font-size:1.2em;}
+        ul.nav li.dropdown:hover > ul.dropdown-menu {  display: block;  }
+      }
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        #titulo_principal{top:0px;}
+        ul.nav li.dropdown:hover > ul.dropdown-menu {   display: block;   }
+      }
+
+      @media (min-width: 1200px) {
+        ul.nav li.dropdown:hover > ul.dropdown-menu {  display: block;  }
+      }
