@@ -99,14 +99,14 @@ $(function() {
 
    $(".ventanas").fancybox({
 		maxWidth	: 800,
-		maxHeight	: 600,
+		maxHeight	: 900,
 		fitToView	: true,
 		width		: '70%',
-		height		: '70%',
+		height		: '90%',
 		autoSize	: false,
 		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none'
+		openEffect	: 'elastic',
+		closeEffect	: 'elastic'
 	});
 
 });
