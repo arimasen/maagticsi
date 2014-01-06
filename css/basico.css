@@ -35,9 +35,7 @@ h1, h2, h3 {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+  .container { width: 970px; }
 }
 
 #titulo_principal{
@@ -51,9 +49,7 @@ h1, h2, h3 {
 	line-height:1.7;
 }
 @media(max-width:775px){
-	#titulo_principal{
-		width: 96%;
-		}
+	#titulo_principal{ width: 96%;	}
 }
 .bg-banner {
 	width:100%;
@@ -153,7 +149,8 @@ behavior : url('js/pie.htc');*/
 	border-left:#00b7af 28px solid;	
 }
 .lista.padding{
-	padding:50px 15px;
+	/*padding:50px 15px;  ANTERIOR*/
+	padding:105px 15px;
 }
 .lista li {
 	/*font-weight: bold;*/
@@ -427,9 +424,7 @@ p.gris{
 	margin:18px 0;
 }
 @media(max-width:768px){
-	#nav-principal .divider {
-		display:none;
-		}
+	#nav-principal .divider {	display:none;	}
 }
 /**banner**/
 .bgnegro70 {
@@ -487,6 +482,9 @@ li.list-group-item ul li ul li {
 
 /**index**/
 .col-sm-6 .wrapper {
+	padding:15px;
+}
+.col-sm-12 .wrapper {
 	padding:15px;
 }
 .gestion .wrapper {
@@ -557,9 +555,7 @@ button.red:hover {
 	position:relative;
 }
  @media  (max-width : 768px){
-	.bg-manual {
-		margin-bottom:20px;
-	}
+	.bg-manual {margin-bottom:20px;}
  }
 .bg-manual .titulo {
 	position: absolute;
@@ -681,9 +677,9 @@ button.btn-side .title {
 	color:#666;
 }
 
-#medidor {width: 0px;}
-      @media  (min-width : 768px){
-        #medidor {width:1px;}
+#medidor {width: 0px;display:block;}
+@media  (min-width : 768px){
+        #medidor {width:1px; display:inline;}
       }
 	  
 .panel .list-group-item {

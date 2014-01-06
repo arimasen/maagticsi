@@ -53,8 +53,26 @@ $(function() {
 		$("#"+estaAct).css("display","block");
 	});
 
-	$(window).scroll(function(){
+	/*$(window).scroll(function(){
 		if ($("#medidor").css("width") == "1px" ){
+
+			if ($window.scrollTop() > offset.top) {
+	            $("#sidebar").stop().animate({
+	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
+	 			}, "slow" );
+	        } else {
+	    		$("#sidebar").stop().animate({
+	 				"marginTop": 0 + "px"
+	 			}, "slow" );
+	        }
+		} else{
+			console.log("NA"+$("#medidor").css("width"));
+		}
+
+	});*/
+
+	$(window).scroll(function(){
+		if ($("#medidor").css("display") == "inline" ){
 
 			if ($window.scrollTop() > offset.top) {
 	            $("#sidebar").stop().animate({
