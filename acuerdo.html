@@ -78,6 +78,7 @@ NAVEGACION
       <li class="dropdown">
         <a href="manual.html">MAAGTICSI<b class="caret"></b></a>
         <ul class="dropdown-menu drop-disp">
+          <li><a href="reglas.html">Reglas Generales</a></li>
           <li><a href="manual.html#gobernanza">Gobernanza</a></li>
           <li><a href="manual.html#organizacion">Organización</a></li>
           <li><a href="manual.html#entrega">Entrega</a></li>
@@ -103,7 +104,7 @@ NAVEGACION
 
  		<div class="row">
  			<div id="proceso1" class="col-sm-9" style="margin-top:-30px;">
- 				<h1 class="color-rojo title-seccion">Acuerdo</h1>
+ 				<h1 class="color-rojo title-seccion">Acuerdo</h1><span id="medidor"></span>
  			</div>
  		</div>
  		
@@ -113,19 +114,18 @@ NAVEGACION
         <div class="panel panel-default">
           <div class="panel-body">
             <h3 id="acuerdo1" class="color-azul">Objeto</h3>
-        <p><b>Art. 1.- </b>El presente Acuerdo tiene por objeto emitir políticas para la Estrategia Digital Nacional, disposiciones administrativas en materia de tecnologías de la información y comunicaciones, así como de seguridad de la información, y el Manual Administrativo de Aplicación General en Materia de Tecnologías de la Información y Comunicaciones y de Seguridad de la Información, contenido en el Anexo Único que forma parte del mismo. </p>
+            <p><b>Art. 1.- </b>El presente Acuerdo tiene por objeto emitir políticas para la Estrategia Digital Nacional, disposiciones administrativas en materia de tecnologías de la información y comunicaciones, así como de seguridad de la información, y el Manual Administrativo de Aplicación General en Materia de Tecnologías de la Información y Comunicaciones y de Seguridad de la Información, contenido en el Anexo Único que forma parte del mismo. </p>
+          
+            <h3 id="acuerdo2" class="color-azul">Ámbito de Aplicación</h3>
+            <div class="row">
+              <div class="col-sm-6">El presente Acuerdo, así como el Manual, deberá ser observado por las dependiencias y entidades de la Administración Pública Federal y la Procuraduría General de la República.</div>
+              <div class="col-sm-6">Las Secretarías de la Defensa Nacional y de Marina, así como el Comisionado Nacional de Seguridad, las unidades administrativas adscritas a éste, y el Centro, en atención a la atribuciones a su cargo, estarán exceptuadas de la aplicación de lo dispuesto en el presente Acuerdo cuando ello pueda vulnerar su operación.</div>
+            </div>
           </div>
         </div>
-        
-        <h3 id="acuerdo2" class="color-azul">Ámbito de Aplicación</h3>
-        <div class="row">
-          <div class="col-sm-6">El presente Acuerdo, así como el Manual, deberá ser observado por las dependiencias y entidades de la Administración Pública Federal y la Procuraduría General de la República.</div>
-          <div class="col-sm-6">Las Secretarías de la Defensa Nacional y de Marina, así como el Comisionado Nacional de Seguridad, las unidades administrativas adscritas a éste, y el Centro, en atención a la atribuciones a su cargo, estarán exceptuadas de la aplicación de lo dispuesto en el presente Acuerdo cuando ello pueda vulnerar su operación.</div>
-        </div>
-
         <h3 id="acuerdo5" class="color-azul">Responsables de la Aplicación</h3>
         <p><b>Art. 3.- </b>La aplicación de las políticas y disposiciones contenidas en el presente Acuerdo y su Anexo Único, corresponde a los Titulares de las áreas o unidades administrativas responsables de las TIC en las Instituciones, así como a los servidores públicos cuyas atribuciones o funciones se vinculen con las TIC y con la seguridad de la información.</p>
-        <p>Para el debido cumplimiento del presente Acuerdo, los Titulares de las Instituciones, realizarán las acciones que estimen necesarias e instruirán lo conducente para que se dejen sin efecto los acuerdos, normas, lineamientos, oficios circulares y demás disposiciones o procedimientos de carácter interno que se hubieren emitido en materia de TIC que no deriven de facultades expresamente previstas en leyes y reglamentos.</p>
+        <p><b>Art. 4.- </b>Para el debido cumplimiento del presente Acuerdo, los Titulares de las Instituciones, realizarán las acciones que estimen necesarias e instruirán lo conducente para que se dejen sin efecto los acuerdos, normas, lineamientos, oficios circulares y demás disposiciones o procedimientos de carácter interno que se hubieren emitido en materia de TIC que no deriven de facultades expresamente previstas en leyes y reglamentos.</p>
 
         <h3 id="acuerdo3" class="color-azul">Interpretación, Seguimiento y Vigilancia</h3>
         <p><b>Art. 31.- </b>La interpretación del presente Acuerdo, para efectos administrativos, así como la resolución de los casos no previstos en el mismo, corresponderá:</p>
@@ -158,161 +158,18 @@ NAVEGACION
       <div class="col-sm-3" id="sidebar"><!-- Columna chica -->
         <h3>Consulta</h3>
         
-        <button type="button" class="btn-lg btn-side" style="color:gray;" data-toggle="modal" data-target="#definiciones"><span class="glyphicon glyphicon-list"></span><span class="title">Definiciones</span></button>
+        <a class="ventanas" data-fancybox-type="iframe" href="definiciones.html"><button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-list"></span><span class="title">Definiciones</span></button></a>
         <p></p>
-        <button type="button" class="btn-lg btn-side" style="color:gray;"  data-toggle="modal" data-target="#productos"><span class="glyphicon glyphicon-list-alt"></span><span class="title">Productos (Formatos)</span></button>
+        <a class="ventanas" data-fancybox-type="iframe" href="productos.html"><button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-list-alt"></span><span class="title">Productos (Formatos)</span></button></a>
         <p></p>
         <a href="descargables/matriz.pdf"><button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-book"></span><span class="title">Matriz de Metodologías</span></button></a>
         <p></p>
         <a href="descargables/diagramas.pdf"><button type="button" class="btn-lg btn-side" style="color:gray;"><span class="glyphicon glyphicon-eye-open"></span>  <span class="title">Diagramas de procesos</span></button></a>
         <p></p><p></p>
         <button type="button" class="btn-lg btn-side" style="color:gray;" id="btn_subir"><span class="glyphicon glyphicon-circle-arrow-up"></span>  <span class="title">Subir</span></button>
-      </div>  <!-- Columna chica -->
       
+      </div>  <!-- Columna chica -->
     </div>
-    
-
-
-<!-- Modal Definiciones-->
-<div class="modal fade" id="definiciones" tabindex="-1" role="dialog" aria-labelledby="definicionesLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="definicionesLabel">Definiciones (Artículo 2)</h4><span id="medidor"></span>
-      </div>
-      <div class="modal-body">
-        
-      <div class="row">
-        <div class="col-sm-6">
-          <dl>
-            <dt>I. Activos de TIC:</dt>
-            <dd>Los aplicativos de cómputo, bienes informáticos, soluciones tecnológicas, sus componentes, las bases de datos o archivos electrónicos y la información contenida en éstos.</dd>
-            <dt>II. Aplicativo de cómputo:</dt>
-            <dd>el software y/o los sistemas informáticos, que se conforman por un conjunto de componentes o programas construidos con herramientas de software que habilitan una funcionalidad o automatizan un proceso, de acuerdo a requerimientos previamente definidos;</dd>
-            <dt>III. Arquitectura Empresarial:</dt>
-            <dd>la información del estado actual y futuro de una institución, a partir de un análisis desde una perspectiva estratégica; considerando modelos de negocio, procesos, aplicativos y tecnología;</dd>
-            <dt>IV. Arquitectura Orientada a Servicios:</dt>
-            <dd>la metodología y marco de trabajo, para construir componentes de software reutilizables para la interoperabilidad de aplicativos de cómputo;</dd>
-            <dt>V. Bases de Colaboración:</dt>
-            <dd>aquéllas a las que se alude en el artículo sexto del Decreto que establece las medidas para el uso eficiente, transparente y eficaz de los recursos públicos, y las acciones de disciplina presupuestaria en el ejercicio del gasto público, así como para la modernización de la Administración Pública Federal;</dd>
-            <dt>VI. Borrado seguro:</dt>
-            <dd>el proceso mediante el cual se elimina de manera permanente y de forma irrecuperable la información contenida en medios de almacenamiento digital;</dd>
-            <dt>VII. Centro:</dt>
-            <dd>el Centro de Investigación y Seguridad Nacional, órgano desconcentrado de la Secretaría de Gobernación;
-</dd>
-            <dt>VIII. Centro de Datos:</dt>
-            <dd>el lugar físico en el que se ubican los activos de TIC y desde el que se provén servicios de TIC;</dd>
-            <dt>IX. CNTSE:</dt>
-            <dd>el Catálogo Nacional de Trámites y Servicios del Estado, al que se alude en el Programa;</dd>
-            <dt>X. Cómputo en la Nube:</dt>
-            <dd>al modelo de prestación de servicios digitales que permite a las instituciones públicas acceder a un catálogo de servicios digitales estandarizados, los cuales pueden ser: de infraestructura como servicios, de plataforma como servicios y de software como servicios;</dd>
-            <dt>XI. Decreto:</dt>
-            <dd>el Decreto que establece las medidas para el uso eficiente, transparente y eficaz de los recursos públicos, y las acciones de disciplina presupuestaria en el ejercicio del gasto público, así como para la modernización de la Administración Pública Federal, publicado en el Diario Oficial de la Federación el 10 de diciembre de 2012;</dd>
-            <dt>XII. Dependencias:</dt>
-            <dd>las Secretarías de Estado, incluyendo a sus órganos administrativos desconcentrados y la Consejería Jurídica del Ejecutivo Federal, así como a la Oficina de la Presidencia de la República y la Procuraduría General de la República;</dd>
-            <dt>XIII. Diseminación: </dt>
-            <dd>la transmisión o entrega de información considerada de seguridad nacional, a quienes cumplan con los requisitos para conocer esa información, de acuerdo con el nivel de acceso autorizado;</dd>
-            <dt>XIV. Dominio tecnológico:</dt>
-            <dd>las agrupaciones lógicas de TIC denominadas dominios, que conforman la arquitectura tecnológica de la Institución, los cuales podrán ser, entre otros, los grupos de, seguridad, cómputo central y distribuido, cómputo de usuario final, telecomunicaciones, colaboración y correo electrónico, internet, intranet y aplicativos de cómputo;</dd>
-            <dt>XV. EDN:</dt>
-            <dd>la Estrategia Digital Nacional contenida en el Objetivo número 5 del Programa;</dd>
-            <dt>XVI. EIDA: </dt>
-            <dd>el Esquema de Interoperabilidad y de Datos Abiertos de la Administración Pública Federal, establecido mediante Acuerdo publicado en el Diario Oficial de la Federación, el 6 de septiembre de 2011;</dd>
-            <dt>XVII. Entes públicos:</dt>
-            <dd>las Instituciones, organismos u organizaciones públicas del ámbito federal y local;</dd>
-          </dl>
-        </div>
-        <div class="col-sm-6">
-          <dl>
-            <dt>XVIII. Entidades:</dt>
-            <dd>los organismos públicos descentralizados, empresas de participación estatal mayoritaria, instituciones nacionales de crédito, organizaciones auxiliares nacionales de crédito e instituciones nacionales de seguros y de fianzas, y fideicomisos públicos que en términos de la Ley Orgánica de la Administración Pública Federal y de la Ley Federal de las Entidades Paraestatales, sean considerados entidades de la Administración Pública Federal Paraestatal;</dd>
-            <dt>XIX. ERISC:</dt>
-            <dd>Equipo de respuesta a incidentes de seguridad en TIC en la Institución;</dd>
-            <dt>XX. Infraestructura de TIC:</dt>
-            <dd>el hardware, software, redes e instalaciones requeridas para desarrollar, probar, proveer, monitorear, controlar y soportar los servicios de TIC;</dd>
-            <dt>XXI. Iniciativas de TIC:</dt>
-            <dd>la conceptualización o visualización temprana de una oportunidad para ofrecer un aplicativo de cómputo, solución tecnológica o servicio de TIC o una solución tecnológica en beneficio de la Institución, las cuales podrán o no concretarse en uno o más proyectos de TIC.</dd>
-            <dt>XXII. Instancias de seguridad nacional:</dt>
-            <dd>las Instituciones o autoridades que en función de sus atribuciones participen directa o indirectamente en la seguridad nacional, conforme a lo dispuesto en la fracción II del artículo 6 de la Ley de Seguridad Nacional, incluidas aquéllas que tengan reconocido dicho carácter por Acuerdo tomado en el seno del Consejo de Seguridad Nacional;</dd>
-            <dt>XXIII. Institución:</dt>
-            <dd>las dependencias y entidades de la Administración Pública Federal, tal y como se definen en este Acuerdo;</dd>
-            <dt>XXIV. Lineamientos:</dt>
-            <dd>los Lineamientos para la aplicación y seguimiento de las medidas para el uso eficiente, transparente y eficaz de los recursos públicos, y las acciones de disciplina presupuestaria en el ejercicio del gasto público, así como para la modernización de la Administración Pública Federal, publicados en el Diario Oficial de la Federación el 30 de enero de 2013;</dd>
-            <dt>XXV. MAAGMAASSP:</dt>
-            <dd>el Manual Administrativo de Aplicación General en materia de Adquisiciones, Arrendamientos y Servicios del Sector Público;</dd>
-            <dt>XXVI. MAAGTICSI:</dt>
-            <dd>el Manual Administrativo de Aplicación General en las materias de Tecnologías de la Información y Comunicaciones, y de Seguridad de la Información, Anexo Único del presente Acuerdo;</dd>
-            <dt>XXVII. PETIC:</dt>
-            <dd>el Plan Estratégico de Tecnologías de la Información y Comunicaciones que elaboran las Instituciones en los términos señalados en el MAAGTICSI;</dd>
-            <dt>XXVIII. Programa:</dt>
-            <dd>el Programa para un Gobierno Cercano y Moderno 2013-2018, aprobado mediante Decreto publicado en el Diario Oficial de la Federación el 30 de agosto de 2013;</dd>
-            <dt>XXIX. Proyectos de TIC:</dt>
-            <dd>el esfuerzo temporal que se lleva a cabo para crear un producto, servicio o resultado único de TIC;</dd>
-            <dt>XXX. Seguridad de la información:</dt>
-            <dd>la capacidad de preservar la confidencialidad, integridad y disponibilidad de la información, así como la autenticidad, confiabilidad, trazabilidad y no repudio de la misma;</dd>
-            <dt>XXXI. Seguridad nacional:</dt>
-            <dd>las acciones a las que se refiere el artículo 3 de la Ley de Seguridad Nacional;</dd>
-            <dt>XXXII. Tecnologías verdes:</dt>
-            <dd>el conjunto de mecanismos y acciones sobre el uso y aprovechamiento de las tecnologías de la información y comunicaciones, que reducen el impacto de éstas sobre el medio ambiente, contribuyendo a la sustentabilidad ambiental; considerando inclusive el reciclaje de componentes utilizados en el uso de estas tecnologías;</dd>
-            <dt>XXXIII. TIC:</dt>
-            <dd>las tecnologías de información y comunicaciones que comprenden el equipo de cómputo, software y dispositivos de impresión que sean utilizados para almacenar, procesar, convertir, proteger, transferir y recuperar información, datos, voz, imágenes y video, y</dd>
-            <dt>XXXIV. Unidad:</dt>
-            <dd>la Unidad de Gobierno Digital de la Secretaría de la Función Pública.</dd>
-          </dl>
-        </div>
-      </div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-<!-- Modal productos-->
-<div class="modal fade" id="productos" tabindex="-1" role="dialog" aria-labelledby="productosLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="productosLabel">Productos (formatos)</h4>
-      </div>
-      <div class="modal-body">
-        
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="list-group">
-            <li class="list-group-item"> <a href="descargables/pe1.pdf">“Acta de integración y forma de operación del grupo de trabajo para la dirección de TIC”. Formato F1 PE. </a></li>
-            <li class="list-group-item"> <a href="descargables/apct1.pdf">“Listado de bienes y servicios de TIC que la UTIC requiere se contraten”. Formato F1 APCT. </a> </li>
-            <li class="list-group-item"> <a href="descargables/apct2.pdf">“Documento para la dictaminación de contrataciones de TIC” Formato F2 APCT.  </a></li>
-            <li class="list-group-item"> <a href="descargables/ads1.pdf">“Programa de capacidad”. Formato F1 ADS.</a></li>
-            <li class="list-group-item"> <a href="descargables/ads2.pdf">“Programa de disponibilidad”. Formato F2 ADS.  </a></li>
-            <li class="list-group-item"> <a href="descargables/ads3.pdf">“Análisis de impacto al negocio”. Formato F3 ADS.</a>  </li>
-            <li class="list-group-item"> <a href="descargables/ads4.pdf">“Programa de continuidad”. Formato F4 ADS. </a> </li>
-            <li class="list-group-item"> <a href="descargables/asi1.pdf">“Documento de integración y operación del grupo estratégico de seguridad de la información”. Formato F1 ASI. </a> </li>
-            <li class="list-group-item"> <a href="descargables/asi2.pdf">“Catálogo de infraestructuras críticas”. Formato F2 ASI.  </a></li>
-          </ul>    
-        </div>
-        <div class="col-sm-6">
-          <ul class="list-group">
-            <li class="list-group-item"> <a href="descargables/asi3.pdf">“Documento de resultados del análisis de riesgos”. Formato F3 ASI.  </a></li>
-            <li class="list-group-item"> <a href="descargables/asi4.pdf">“Documento de definición del SGSI”. Formato F4 ASI.  </a></li>
-            <li class="list-group-item"> <a href="descargables/asi5.pdf">“Directriz rectora de respuesta a incidentes”. Formato F5 ASI.  </a></li>
-            <li class="list-group-item"> <a href="descargables/adp1.pdf">“Acta de constitución del proyecto”. Formato F1 ADP.  </a></li>
-            <li class="list-group-item"> <a href="descargables/adp2.pdf">“Acta de aceptación de entregables”. Formato F2 ADP.  </a></li>
-            <li class="list-group-item"> <a href="descargables/adp3.pdf">“Acta de cierre de proyecto”. Formato F3 ADP.  </a></li>
-            <li class="list-group-item"> <a href="descargables/apro1.pdf">“Reporte de avance sobre el cumplimiento de obligaciones”. Formato F1 APRO.  </a></li>
-            <li class="list-group-item"> <a href="descargables/aop1.pdf">“Programa de aprovisionamiento de la infraestructura tecnológica”. Formato F1 AOP.</a></li>
-            <li class="list-group-item"> <a href="descargables/aop2.pdf">“Programa de mantenimiento de la infraestructura tecnológica”. Formato F2 AOP.  </a></li>
-          </ul> 
-        </div>
-      </div>
-
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal Productos-->
-
-		
   </div>  <!-- div.container -->
 
 
@@ -321,6 +178,9 @@ NAVEGACION
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/core.js"></script>
+    
+    <link href="css/fancybox.css" rel="stylesheet">
+    <script src="js/fancybox.pack.js"></script>
 
   </body>
 </html>
