@@ -47,9 +47,13 @@ h1, h2, h3 {
 	text-shadow: 1px 1px 1px rgba(45, 45, 45, 1);
 	font-size: 1.3em;
 	line-height:1.7;
+	text-align: justify !important;
 }
 @media(max-width:775px){
 	#titulo_principal{ width: 96%;	}
+}
+@media(min-width:1681px){
+	#titulo_principal{ width: 800px;	}
 }
 .bg-banner {
 	width:100%;
@@ -150,7 +154,7 @@ behavior : url('js/pie.htc');*/
 }
 .lista.padding{
 	/*padding:50px 15px;  ANTERIOR*/
-	padding:105px 15px;
+	padding:85px 15px;
 }
 .lista li {
 	/*font-weight: bold;*/
@@ -428,7 +432,11 @@ p.gris{
 }
 /**banner**/
 .bgnegro70 {
-	background:rgba(0,0,0,0.70);
+	/*background:rgba(0,0,0,0.70);
+	text-shadow: 1px 1px 1px #0D0D0D;*/
+	text-shadow: shadow1, shadow2, shadow3;
+	text-shadow: 1px 2px 0px rgba(0,0,0,0.15), 2px 2px 0px #0D0D0D;
+	text-transform: uppercase !important;
 }
 /**listas**/
 .links {
@@ -548,6 +556,8 @@ button.red:hover {
 .entrega {
 	background:url(../imgs/bg_green.png) repeat-x;
 }
+
+a.index-btn, a.index-btn:link, a.index-btn:visited, a.index-btn:hover, a.index-btn:active {text-decoration: none;}
 /**iconos del manual**/
 .bg-manual {
 	height:196px;
