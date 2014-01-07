@@ -668,8 +668,20 @@ h4.actividadverde {
 	/*border-right:#fefefe 1px solid;*/
 	margin:2% 0;
 }
+.fa {
+	display:block;
+	/*float:left;*/
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+	color:#FEFEFE;
+	/*font-size:1.3em;*/	
+	/*padding-right:30px;*/
+	/*border-right:#fefefe 1px solid;*/
+	margin:2% 0;
+	line-height: inherit;
+}
+
 button.btn-side .title {
-	float:left;
+	float:right; /*(antes, left)*/
 	display:block;
 	padding-left:12px;	
 	/*border-left:#bdbdbf 1px solid;*/
