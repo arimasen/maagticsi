@@ -671,8 +671,8 @@ h4.actividadverde {
 .fa {
 	display:block;
 	/*float:left;*/
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-	color:#FEFEFE;
+	text-shadow: 1 1px 1px rgba(100, 100, 100, 0.6);
+	color:#CD2A2D;
 	/*font-size:1.3em;*/	
 	/*padding-right:30px;*/
 	/*border-right:#fefefe 1px solid;*/
