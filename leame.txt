@@ -4,13 +4,44 @@ LÉAME
 Autor: Carlos Ariel Páez (Arimasen)
 ***************
 
-DETALLES DE PROGRAMACIÓN PARA LA PÁGINA DEL
+GENERALIDADES DE LA PROGRAMACIÓN PARA LA PÁGINA DEL
 	 ACUERDO que tiene por objeto emitir Políticas para la Estrategia Digital Nacional, las disposiciones administrativas en materia de tecnologías de la información y comunicaciones, así como de seguridad de la información y el Manual Administrativo de Aplicación General en estas materias.
 
 
-Para las características espec+ificas del sitio, favor de dirigirse a los archivos "disposiciones.html", "basico.css" y "js/core.js" que se encuentran pertinentemente comentados en cuanto a las características del sitio.
+Antes de realizar cualquier cambio a los archivos del sitio, favor de leer el presente documento, así como los comentarios de los archivos "disposiciones.html", "proceso1.html", "basico.css" y "js/core.js".
 
-El presente sitio fue construído con HTML5 y CSS3, con apoyo de Jquery para algunas cuestiones de interactividad y está basado en una estructura BOOTSTRAP versión 3.0.x, para facilitar su integración con dispositivos móviles. Para apoyar las diferentes necesidades adicionales, se implementaron además dos plug-ins adicionales, a saber:
+-----------------------------------------------------------------------------
+INTRODUCCIÓN
+-----------------------------------------------------------------------------
+
+Para las características específicas del sitio, favor de dirigirse a los archivos "disposiciones.html", "proceso1.html", "basico.css" y "js/core.js" que se encuentran pertinentemente comentados en cuanto a las características del sitio. Las páginas "disposiciones.html" y "proceso1.html" tendrá comentarios de las partes principales del sitio y su funcionamiento. El resto de los HTMLs NO estarán comentados (más que las secciones más importntes), por cuestiones de peso del archivo.
+
+El presente sitio fue construído con HTML5 y CSS3, con apoyo de JQuery para algunas cuestiones de interactividad y está basado en una estructura BOOTSTRAP versión 3.0.x, para facilitar su integración con dispositivos móviles. Para apoyar las diferentes necesidades adicionales, se implementaron además dos plug-ins adicionales, a saber:
 - Font-Awesome: Para los íconos de la barra lateral.
-- Fancy-box: Para los pop-ups de las secciones "Definiciones", "Productos (formatos)" y "Diagramas de procesos" de la bara lateral.
+- Fancy-box: Para los pop-ups de las secciones "Definiciones", "Productos (formatos)" y "Diagramas de procesos" de la barra lateral.
 
+La mayor parte de los elementos fueron trabajados según estructuras provenientes del mismo BOOTSTRAP.
+Las principales aplicaciones de los componentes fueron:
+-Sistema de retícula: A través de DIVs anidados con las clases "row" y "col-sm-x"
+-Panel displays y "well" para destacar información, tanto en procesos como en los HTML del acuerdo.
+-Glyphicons
+-Barra de navegación: Incluyendo un sistema modificado con JQuery para el dropdown.
+-Estilos de botones.
+
+Para los elementos antes mencionados, la documentación correspondiente está disponible en getbootstrap.com/
+
+
+-----------------------------------------------------------------------------
+SOBRE LAS FUNCIONALIDADES DEPENDIENTES DEL TAMAGNO DE LA PANTALLA:
+-----------------------------------------------------------------------------
+
+BOOTSTRAP incluye varias funciones relacionadas a la modificación de la presentación de sitio dependiendo del tamaño de la pantalla, característica que es más obvia al momento de comprimir elementos en dos columnas a una sola cuando la pantalla es pequeña. 
+
+Se introdujeron además algunas características al sitio basadas en el mismo sistema: el uso de media queries. Varias de éstas funcionan detectando el atributo "display" del elemento <span id="medidor"> presente en los HTMLs principales de sitio. Este elemento es un elemento vacío que, por si mismo, no tiene otra función mas que servir como referencia. Dependiendo del tamaño de la pantalla, su atributo "display" puede tener el valor "display" o "inline". El cambio del valor de "display" se realiza a través de un media query (@media) en el CSS y sus funciones tienen su lugar en el archivo "js/core.js". 
+
+Las funcionalidades incluídas dependientes del tamagno de la pantalla son:
+-Ancho máximo del contenedor del sitio de 970px, independeientemente del tamaño del monitor,
+-controlar el ancho del elemento con id="titulo_principal" para que no sobrepasara el contenedor al minimizar o maximizar la pantalla,
+-que el despliegue de los submenúes de la barra de navegación sea con mouseover o con clic,
+-que el sidebar siga al usuario (en caso de ser una pantalla grande) o permanezca estática al final del sitio y
+-estilos de algunos elementos, definidos en "css/basico.css".

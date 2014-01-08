@@ -4,8 +4,10 @@
 ---------------------------------------------*/
 
 $(function() {
-	/* Para que se despliegue en l abarra de navegación los submenúes al poner 
-	el mouse encima*/
+	/* Para que, en los diferentes procesos, cambie la actividad visible según
+	la pestagna en la que se da clic.
+	Esconde todas las Actividades y sólo muestra la actividad a la que se le da clic.
+	Al mismo tiempo, marca como "activa" la pestaña que se seleccionó	*/
 	$("ul.pestagnas li a").click(function(event){
 		event.preventDefault();
 		$("ul.pestagnas li a").removeClass("active");

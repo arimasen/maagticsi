@@ -1,6 +1,7 @@
 /* ----------------------------------------- */
 /* ----Estilos para MAAGTICSI ---------------
 --Autor: Ariel Páez (Arimasen) por Espacio360
+y la disegnadora Alma Reyes.
 ---------------------------------------------*/
 
 @charset "utf-8";
@@ -22,7 +23,6 @@
 body{
 	font-family: roboto;
 	font-size: 1.4em;
-	/*padding-top: 70px;*/
 }
 h1,h2,h3,h4 {font-family: opensans;
 }
@@ -70,67 +70,23 @@ h1, h2, h3 {
 .reduce-top{
 	margin-top: -50px;
 }
-/*#nav-principal li {padding-top:21px;}
-*/
 
 #nav-principal{
-	/*background: rgb(239,239,239);  Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' 
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3MyUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2VjZWNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);*/
-/*background: -moz-linear-gradient(top,  rgba(239,239,239,1) 73%, rgba(206,206,206,1) 100%);  FF3.6+ */
-/*background: -webkit-gradient(linear, left top, left bottom, color-stop(73%,rgba(239,239,239,1)), color-stop(100%,rgba(206,206,206,1)));  Chrome,Safari4+ */
-/*background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  Chrome10+,Safari5.1+ */
-/*background: -o-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  Opera 11.10+ */
-/*background: -ms-linear-gradient(top,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  IE10+ */
-/*background: linear-gradient(to bottom,  rgba(239,239,239,1) 73%,rgba(206,206,206,1) 100%);  W3C */
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#cecece',GradientType=0 );  IE6-8 */
-
-/*background: rgb(239,239,239); 
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZWNlY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(206,206,206,1) 100%); 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,239,239,1)), color-stop(100%,rgba(206,206,206,1))); 
-background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,206,206,1) 100%); 
-background: -o-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,206,206,1) 100%);
-background: -ms-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,206,206,1) 100%); 
-background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(206,206,206,1) 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#cecece',GradientType=0 ); 
-*/
-
 	background:url(../imgs/bg-ruido.jpg) #efefef;	
 	border-radius:5px;	
 }
 #nav-principal>ul>li {padding-top:21px;}
-#nav-principal li a{
+#nav-principal li a{}
 
-/*height:50px;*/
-
-/*-moz-border-radius: 15px; 
--webkit-border-radius: 15px; 
-border-radius: 15px; 
-behavior : url('js/pie.htc');*/
-}
-
-/*#nav-principal li.dropdown a{height:30px;}  -- OMITIR???
-*/
 .list-group-item{
-	/*border: 0px;
-	border-top: 1px solid #DDDDDD;*/
 	border-left:1px solid #DDDDDD;
 	border-right:1px solid #DDDDDD;
 }
-.color-azul{
-	color:#008781;
-}
-.color-rojo{
-	color:#cd2a2d;
-	/*border-bottom: 1px solid #CCC;*/
-}
-.color-gris {
-	color:#77777a;
-}
-.color-verde {
-	color:#00998e;
-}
+.color-azul{	color:#008781;}
+.color-rojo{	color:#cd2a2d;}
+.color-gris {	color:#77777a;}
+.color-verde {	color:#00998e;}
+
 .borde-gris {
 	border-left:8px solid #77777a;
 	margin-top:0px;
@@ -147,29 +103,24 @@ behavior : url('js/pie.htc');*/
 	text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
 }
 .lista{
-	/*list-style:none;*/
 	margin-left:0;
 	margin-bottom:0;
 	border-left:#00b7af 28px solid;	
 }
 .lista.padding{
-	/*padding:50px 15px;  ANTERIOR*/
 	padding:85px 15px;
 }
 .lista li {
-	/*font-weight: bold;*/
 	padding:5px;
 	margin-left:20px;
 	list-style:disc;
 	color:#008781;
 }
 .lista a, .lista a:link, .lista a:visited{
-	/*color:#3ccec8;*/
 	color:#008781;
 	text-decoration: none;
 }
 .lista a:hover, .lista a:active{
-	/*color:#2ef4ec;*/
 	color:#3ccec8;
 }
 
@@ -179,10 +130,7 @@ behavior : url('js/pie.htc');*/
 	background:#dbdbdc;
 	border-radius: .2em;
 	font-size:1.2em;
-	/*border: 1px solid #CCCCCC;
-    box-shadow: 0 1px 1px #FEFFFF;*/
 	border: 1px solid #d1d1d2;
-	/*border: 1px solid #a9a9ab;*/
 	color: #333;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8);
 	-moz-border-radius: .2em;
@@ -210,7 +158,6 @@ behavior : url('js/pie.htc');*/
 	box-shadow: 0 0 3px 1px rgba(0,0,0,.3) inset, 0 1px 0 rgba(255,255,255,.3);
 }
 
-
 .panel{
 	background-color: #efefef;
 	border-bottom: 4px solid #dbdbdc;
@@ -220,17 +167,12 @@ behavior : url('js/pie.htc');*/
     width: 670px;
 }
 
-
-/*ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
-}*/
 .drop-disp{
 width:210px;
 padding: 5px;
 }
 .drop-disp li {
 	padding-top: 5px;
-	/*padding:5px;*/
 	border-top: 1px solid #CCC;
 }
 .drop-disp li:first-child {
@@ -238,7 +180,6 @@ padding: 5px;
 }
 
 .drop-disp li a{
-	/*height:25px;*/
 	padding:5px;
 }
 
@@ -356,6 +297,7 @@ ul.pestagnas a:hover, ul.pestagnas a:active{
 	text-decoration: none;
 	background-color: #A42224;
 }
+
 /*pestañas grises*/
 ul.pestagnas li.gris {display: inline-block; background-color: #a9a9ab;}
 ul.pestagnas li.gris a.active{
@@ -369,6 +311,7 @@ ul.pestagnas a.gris:hover, ul.pestagnas a.gris:active{
 	text-decoration: none;
 	background-color: #59595c;
 }
+
 /*pestañas verdes*/
 ul.pestagnas li.verde {display: inline-block; background-color: #00b7af;}
 ul.pestagnas li.verde a.active{
@@ -382,7 +325,6 @@ ul.pestagnas a.verde:hover, ul.pestagnas a.verde:active{
 	text-decoration: none;
 	background-color: #00665a;
 }
-
 
 p.gris{
 	font-weight: bold;
@@ -457,8 +399,7 @@ p.gris{
 }
 /**banner**/
 .bgnegro70 {
-	/*background:rgba(0,0,0,0.70);
-	text-shadow: 1px 1px 1px #0D0D0D;*/
+
 	text-shadow: shadow1, shadow2, shadow3;
 	text-shadow: 1px 2px 0px rgba(0,0,0,0.15), 2px 2px 0px #0D0D0D;
 	text-transform: uppercase !important;
@@ -507,6 +448,9 @@ li.list-group-item ul li ul li {
 }
 .nopadding {
 	padding:0;
+}
+.tit-seccion{
+	margin-top:-30px;
 }
 .title-seccion {
 	border-bottom:#ddd 1px solid;
@@ -583,6 +527,7 @@ button.red:hover {
 }
 
 a.index-btn, a.index-btn:link, a.index-btn:visited, a.index-btn:hover, a.index-btn:active {text-decoration: none;}
+
 /**iconos del manual**/
 .bg-manual {
 	height:196px;
@@ -642,6 +587,12 @@ a.index-btn, a.index-btn:link, a.index-btn:visited, a.index-btn:hover, a.index-b
 }
 	
 /***Proceso****/
+.title-proceso{
+	margin-top:-30px; 
+	height:50px; 
+	-webkit-box-shadow: 0px 7px 2px -4px #262626; 
+	box-shadow: 0px 7px 2px -4px #262626;
+}
 .tit-proceso {
 	margin:0;
 	padding:10px 0;
@@ -690,17 +641,12 @@ h4.actividadverde {
 	color:#FFF;
 	font-size:1.3em;	
 	padding-right:30px;
-	/*border-right:#fefefe 1px solid;*/
 	margin:2% 0;
 }
 .fa {
 	display:block;
-	/*float:left;*/
 	text-shadow: 1 1px 1px rgba(100, 100, 100, 0.6);
 	color:#CD2A2D;
-	/*font-size:1.3em;*/	
-	/*padding-right:30px;*/
-	/*border-right:#fefefe 1px solid;*/
 	margin:2% 0;
 	line-height: inherit;
 }
@@ -709,7 +655,6 @@ button.btn-side .title {
 	float:right; /*(antes, left)*/
 	display:block;
 	padding-left:12px;	
-	/*border-left:#bdbdbf 1px solid;*/
 	margin:2% 0;
 	width:70%;
 	text-align:left;
