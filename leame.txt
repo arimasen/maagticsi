@@ -1,0 +1,15 @@
+***************
+LÉAME
+
+Autor: Carlos Ariel Páez (Arimasen)
+***************
+
+DETALLES DE PROGRAMACIÓN PARA LA PÁGINA DEL
+	 ACUERDO que tiene por objeto emitir Políticas para la Estrategia Digital Nacional, las disposiciones administrativas en materia de tecnologías de la información y comunicaciones, así como de seguridad de la información y el Manual Administrativo de Aplicación General en estas materias.
+
+
+Para las características generales del sitio, favor de dirigirse a los archivos "disposiciones.html", "basico.css" y "js/core.js" que se encuentran pertinentemente comentados en cuanto a las características del sitio.
+
+El presente sitio fue construído con HTML5 y CSS3, con apoyo de Jquery para algunas cuestiones de interactividad y está basado en una estructura BOOTSTRAP versión 3.0.x, para facilitar su integración con dispositivos móviles. Para apoyar las diferentes necesidades adicionales, se implementaron además dos plug-ins adicionales, a saber:
+- Font-Awesome: Para los íconos de la barra lateral.
+- Fancy-box: Para los pop-ups de las secciones "Definiciones", "Productos (formatos)" y "Diagramas de procesos" de la bara lateral.

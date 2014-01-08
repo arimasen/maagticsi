@@ -3,47 +3,9 @@
 --Autor: Ariel Páez (Arimasen) por Espacio360
 ---------------------------------------------*/
 
-/* index.html */
-$("#btn_index").click(function(){
-	console.log("Entra");
-	window.location="acuerdo.html";
-});
-
-/* acuerdo.html */
-$("#btn_acuerdo").click(function(){
-	window.location="disposiciones.html";
-});
-$("#drop-objeto").click(function(){
-	if($("#drop-objeto>h2>span").hasClass("glyphicon-chevron-down") ){
-		$("#drop-objeto>h2>span").removeClass("glyphicon-chevron-down");
-		$("#drop-objeto>h2>span").addClass("glyphicon-chevron-up");}
-	else{
-		$("#drop-objeto>h2>span").removeClass("glyphicon-chevron-up");
-		$("#drop-objeto>h2>span").addClass("glyphicon-chevron-down");
-	}
-});
-$("#drop-aplicacion").click(function(){
-	if($("#drop-aplicacion>h2>span").hasClass("glyphicon-chevron-down") ){
-		$("#drop-aplicacion>h2>span").removeClass("glyphicon-chevron-down");
-		$("#drop-aplicacion>h2>span").addClass("glyphicon-chevron-up");}
-	else{
-		$("#drop-aplicacion>h2>span").removeClass("glyphicon-chevron-up");
-		$("#drop-aplicacion>h2>span").addClass("glyphicon-chevron-down");
-	}
-});
-$("#drop-definiciones").click(function(){
-	if($("#drop-definiciones>h2>span").hasClass("glyphicon-chevron-down") ){
-		$("#drop-definiciones>h2>span").removeClass("glyphicon-chevron-down");
-		$("#drop-definiciones>h2>span").addClass("glyphicon-chevron-up");}
-	else{
-		$("#drop-definiciones>h2>span").removeClass("glyphicon-chevron-up");
-		$("#drop-definiciones>h2>span").addClass("glyphicon-chevron-down");
-	}
-});
-
-
 $(function() {
-
+	/* Para que se despliegue en l abarra de navegación los submenúes al poner 
+	el mouse encima*/
 	$("ul.pestagnas li a").click(function(event){
 		event.preventDefault();
 		$("ul.pestagnas li a").removeClass("active");
@@ -53,27 +15,21 @@ $(function() {
 		$("#"+estaAct).css("display","block");
 	});
 
-	/*$(window).scroll(function(){
-		if ($("#medidor").css("width") == "1px" ){
+	/*  POSICIÓN Y ANIMACiÓN DEL SIDEBAR
+		Presente en todos los HTMLs principales, hay un <span id="medidor">, cuyo
+		atributo "display" varía dependiendo del tamagno de la ventana del navegador,
+		usando un atributo CSS3 @media (definido en basico.css).
 
-			if ($window.scrollTop() > offset.top) {
-	            $("#sidebar").stop().animate({
-	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
-	 			}, "slow" );
-	        } else {
-	    		$("#sidebar").stop().animate({
-	 				"marginTop": 0 + "px"
-	 			}, "slow" );
-	        }
-		} else{
-			console.log("NA"+$("#medidor").css("width"));
-		}
+		En caso de ser la pantalla menor a 768px, tiene el valor "block". 
+		En caso contrario, "display" tiene el valor "inline".
+		
+		El script determina, dependiendo del valor "display" de #medidor,
+		si la barra lateral debe moverse o no, y la posición del mismo.
 
-	});*/
-
+	 */
 	$(window).scroll(function(){
 		if ($("#medidor").css("display") == "inline" ){
-
+			//--> Si la pantalla es mayor a 768px
 			if ($window.scrollTop() > offset.top) {
 	            $("#sidebar").stop().animate({
 	 				"marginTop": ($(window).scrollTop() - offset.top) + "px"
@@ -84,37 +40,39 @@ $(function() {
 	 			}, "slow" );
 	        }
 		} else{
-			console.log("NA"+$("#medidor").css("width"));
+			//--> Si la pantalla es menor a 768px
 		}
 
 	});
-
-
-    if ($("#medidor").css("width") != "1px" ){
+	/* PARA ACTIVAR LA FUNCIÓN DE DESPLEGABLE DEL MENÚ, SEGÚN TAMAGNO 
+	VVaría entre desplegable con click o con mouseover.
+	 */
+    if ($("#medidor").css("display") != "inline" ){
+    	//--> Si la pantalla es menor a 768px:
     	$("ul.nav>li.dropdown>a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
 	} else{
+		//--> Si la pantalla es mayor a 768px:
 		$("ul.nav>li.dropdown>a").removeClass("dropdown-toggle").attr("data-toggle","");
 	}
 
+	/*	CORRE LA MISMA FUNCIÓN CUANDO SE MODIFIQUE EL TAMAÑO DEL NAVEGADOR */
 	$( window ).resize(function() {
-		if ($("#medidor").css("width") != "1px" ){
-			console.log("Debe cambiar");
+		if ($("#medidor").css("display") != "inline" ){
     	$("ul.nav>li.dropdown>a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
 	} else{
-		console.log("Debe quitar classes");
 		$("ul.nav>li.dropdown>a").removeClass("dropdown-toggle").attr("data-toggle","");
 	}
 	});
 
-
+	/* 	PARA EL BOTÓN DE SUBIR DE LA SIDEBAR */
     var duration = 500;
-    
     $("#btn_subir").click(function(event) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, duration);
         return false;
     });
 
+    /*  PARA DESPLEGAR UNA VENTANA COMO POP-UP, DE LOS BOTONES DEL SIDEBAR */
    $(".ventanas").fancybox({
 		maxWidth	: 800,
 		maxHeight	: 900,
