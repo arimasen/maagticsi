@@ -294,15 +294,40 @@ padding: 5px;
 	color:#3ccec8;
 }
 
-.well{
-	background:url(../imgs/rol-bg.png) center left repeat-y;
-	background-color: #DDD;
-	border-bottom: 3px solid #AAA;
-	border-left:none;
-	border-right:none;
-	border-top:none;
-	padding-left: 60px;
+.col-sm-6 .well .wrapper{
 	min-height:80px;
+	background:url(../imgs/rol.png) left center no-repeat;
+	padding:19px 19px 19px 60px;
+}
+
+.col-sm-6 .well .wrapper.alto {
+	min-height:100px;
+}
+@media(max-width:768px){
+	.col-sm-6 .well .wrapper.alto {
+		min-height:80px;
+	}
+}
+.well.gray{
+	background-color:#DDD;
+	border-bottom:4px solid #AAA;
+	border-left:1px solid #AAA;
+	border-right:1px solid #AAA;
+	border-top:1px solid #AAA;
+}
+.well.red {
+	background-color: #EEB8B9;
+	border-bottom: 3px solid #E17F81;
+	border-left:1px solid #E17F81;
+	border-right:1px solid #E17F81;
+	border-top:1px solid #E17F81;
+}
+.well.green {
+	background-color: #99d6d2;
+	border-bottom: 3px solid #33ada5;
+	border-left:1px solid #33ada5;
+	border-right:1px solid #33ada5;
+	border-top:1px solid #33ada5;
 }
 
 ul.pestagnas{
