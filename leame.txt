@@ -14,7 +14,7 @@ Antes de realizar cualquier cambio a los archivos del sitio, favor de leer el pr
 INTRODUCCIÓN
 -----------------------------------------------------------------------------
 
-Para las características específicas del sitio, favor de dirigirse a los archivos "disposiciones.html", "proceso1.html", "basico.css" y "js/core.js" que se encuentran pertinentemente comentados en cuanto a las características del sitio. Las páginas "disposiciones.html" y "proceso1.html" tendrá comentarios de las partes principales del sitio y su funcionamiento. El resto de los HTMLs NO estarán comentados (más que las secciones más importntes), por cuestiones de peso del archivo.
+Para las características específicas del sitio, favor de dirigirse a los archivos "disposiciones.html", "proceso1.html", "basico.css" y "js/core.js" que se encuentran pertinentemente comentados en cuanto a las características del sitio. Las páginas "disposiciones.html" y "proceso1.html" tendrá comentarios de las partes principales del sitio y su funcionamiento. El resto de los HTMLs NO estarán comentados (más que las secciones más importantes), por cuestiones de peso del archivo.
 
 El presente sitio fue construído con HTML5 y CSS3, con apoyo de JQuery para algunas cuestiones de interactividad y está basado en una estructura BOOTSTRAP versión 3.0.x, para facilitar su integración con dispositivos móviles. Para apoyar las diferentes necesidades adicionales, se implementaron además dos plug-ins adicionales, a saber:
 - Font-Awesome: Para los íconos de la barra lateral.

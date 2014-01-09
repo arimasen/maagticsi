@@ -249,14 +249,21 @@ padding: 5px;
 		min-height:80px;
 	}
 }
-.well.gray{
+.well.gray, .well.red, .well.green{
 	background-color:#DDD;
 	border-bottom:4px solid #AAA;
 	border-left:1px solid #AAA;
 	border-right:1px solid #AAA;
 	border-top:1px solid #AAA;
 }
-.well.red {
+.col-sm-6 .well.red .wrapper{
+	background:url(../imgs/rol-rojo.png) left center no-repeat;
+}
+.col-sm-6 .well.green .wrapper{
+	background:url(../imgs/rol-verde.png) left center no-repeat;
+}
+
+/*.well.red {
 	background-color: #EEB8B9;
 	border-bottom: 3px solid #E17F81;
 	border-left:1px solid #E17F81;
@@ -270,7 +277,7 @@ padding: 5px;
 	border-right:1px solid #33ada5;
 	border-top:1px solid #33ada5;
 }
-
+*/
 ul.pestagnas{
 	margin:0;
 	padding: 0;
