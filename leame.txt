@@ -4,9 +4,10 @@ LÉAME
 Autor: Carlos Ariel Páez (Arimasen)
 ***************
 
-GENERALIDADES DE LA PROGRAMACIÓN PARA LA PÁGINA DEL
+GENERALIDADES DE LA PROGRAMACIÓN Y EL DESARROLLO DE LA PÁGINA DEL
 	 ACUERDO que tiene por objeto emitir Políticas para la Estrategia Digital Nacional, las disposiciones administrativas en materia de tecnologías de la información y comunicaciones, así como de seguridad de la información y el Manual Administrativo de Aplicación General en estas materias.
 
+CAMBIA NOMBRE DEL ACUERDO----
 
 Antes de realizar cualquier cambio a los archivos del sitio, favor de leer el presente documento, así como los comentarios de los archivos "disposiciones.html", "proceso1.html", "basico.css" y "js/core.js".
 
